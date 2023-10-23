@@ -1,0 +1,43 @@
+nav {
+        background-color: rgb(148, 3, 126);
+        padding: 2px 0;
+}
+nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around; 
+        align-items: center; 
+}
+nav a {
+        text-decoration: none;
+        color: #fff;
+        transition: background-color 0.3s;
+        font-size: 30px;
+}
+nav ul li a:hover {
+        color: rgb(227, 155, 216) 
+}
+footer {
+        color: rgb(148, 3, 126);
+        text-align: center;
+        padding: 20px 0;
+        bottom: 0;
+        width: 100%;
+        font-family: 'Geneva';
+        font-weight: bold;
+        font-size: 18px;
+}
+h1 {
+        font-family: 'Geneva';
+        text-align: center;
+
+}
+h3 {
+        font-family: 'Geneva';
+        text-align: center;
+
+}
+label {
+        font-family: 'Geneva';
+        color: rgb(92, 1, 79)
+}

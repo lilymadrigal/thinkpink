@@ -1,0 +1,68 @@
+<html>
+        <head>
+                <title>Contact Page</title>
+                <link rel="stylesheet" href="styles.css">
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <meta name="viewport" content=“width=device-width, initial-scale=1”>
+                <meta name="description" content="contact">
+                <meta name="author" content="Lily Madrigal">
+                <meta name="keywords" content="Contact Us Page">
+                <style>
+                
+                        form {
+                            width: 300px;
+                            margin: 0 auto;
+                        }
+                
+                        label {
+                            display: block;
+                            margin-bottom: 5px;
+                        }
+                        body {
+                                background-color: rgb(227, 155, 216);
+                                color : rgb(148, 3, 126);
+                        }
+                </style>   
+        </head>
+        <body>
+                <iframe src="navbar.html" width="100%" height="100"></iframe>
+
+                <main>
+                        <h1>Contact Us</h1>
+                        <h3>Thank you for your interest in reaching out to us. We value your feedback, inquiries, and comments.</h3>
+                        <form action="#" method="post">
+                
+                                <label for="fullname">Name (First and Last):</label>
+                                <input type="text" id="fullname" name="fullname" required>
+                
+        
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+
+                                <label for="number">Phone Number:</label>
+                                <input type="text" id="number" name="number" required>
+
+                                <label for="inq">Inquiry Type:</label>
+                                <select id="inq" name="inq" required>
+                                <option value="customer">Customer Support</option>
+                                <option value="payments">Billing and Payments</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="careers">Employment/Career Opportunities</option>
+                                <option value="other">Other</option>
+                                </select>
+
+                                <label for="message">Type Message Here:</label>
+                                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                
+                                
+                                <input type="submit" value="Submit">
+                        </form>
+                        <div id="formSubmit" style="font-family: 'Geneva';
+                        text-align: center;"></div>
+                </main>
+                <footer>
+                        Think Pink. Live Bright.
+                </footer>
+                <script src="contact.js"></script> 
+        </body>
+</html>
