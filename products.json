@@ -1,0 +1,128 @@
+[
+        {
+            "name": "Fanny Pack",
+            "description": "Pink over-the-shoulder fanny pack",
+            "size": "S",
+            "price": "$20",
+            "categories": [
+                "accessories",
+                "festival",
+                "pink"
+            ]
+        },
+        {
+            "name": "Water Bottle",
+            "description": "Small, short, metal, pink water bottle",
+            "size": "S",
+            "price": "$30",
+            "categories": [
+                "accessories",
+                "pink"
+            ]
+        },
+        {
+            "name": "Tank Top",
+            "description": "Cropped, pink, tank top with a small bow",
+            "size": "XS",
+            "price": "$15",
+            "categories": [
+                "clothing",
+                "pink"
+            ]
+        },
+        {
+            "name": "High-Top Sneakers",
+            "description": "High-top pink, laced, sneakers with white rubber soles",
+            "size": "M",
+            "price": "$50",
+            "categories": [
+                "shoes",
+                "pink"
+            ]
+        },
+        {
+            "name": "Hoop Earrings",
+            "description": "Small, hot pink, hooped earrings",
+            "size": "S",
+            "price": "$30",
+            "categories": [
+                "accessories",
+                "party",
+                "pink"
+            ]
+        },
+        {
+            "name": "Festival Bucket Hat",
+            "description": "Pink, flamingo bucket hat; perfect for the beach or a music festival!",
+            "size": "S",
+            "price": "$18",
+            "categories": [
+                "accessories",
+                "festival",
+                "pink"
+            ]
+        },
+        {
+            "name": "Rhinestone Belt",
+            "description": "Thin, pink belt, covered in sparkling rhinetstones",
+            "size": "M",
+            "price": "$15",
+            "categories": [
+                "accessories",
+                "party",
+                "pink"
+            ]
+        },
+        {
+            "name": "Avocado Socks",
+            "description": "Pink crew socks, covered with avocado halves; comes in a pair",
+            "size": "S",
+            "price": "$10",
+            "categories": [
+                "accessories",
+                "pink"
+            ]
+        },
+        {
+            "name": "Purse",
+            "description": "Cross-body, pink purse",
+            "size": "S",
+            "price": "$45",
+            "categories": [
+                "accessories",
+                "pink"
+            ]
+        },
+        {
+            "name": "Toileties Pouch",
+            "description": "Small pouch, perfect for holding everything you need for a weekend away!",
+            "size": "S",
+            "price": "$20",
+            "categories": [
+                "accessories",
+                "pink"
+            ]
+        },
+        {
+            "name": "Phone Case",
+            "description": "Hot pink plastic phone case with build in phone wallet",
+            "size": "M",
+            "price": "$25",
+            "categories": [
+                "accessories",
+                "festival",
+                "pink"
+            ]
+        },
+        {
+            "name": "Hair Scrunchies",
+            "description": "Pack of 3 scrunchies, all different shades of pink",
+            "size": "XS",
+            "price": "$10",
+            "categories": [
+                "accessories",
+                "party",
+                "pink"
+            ]
+        }
+    ]
