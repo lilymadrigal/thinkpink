@@ -1,0 +1,121 @@
+<html>
+        <head>
+                <title>Customer Reviews</title>
+                <link rel="stylesheet" href="styles.css">
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <meta name="viewport" content=“width=device-width, initial-scale=1”>
+                <meta name="description" content="reviews">
+                <meta name="author" content="Lily Madrigal">
+                <meta name="keywords" content="Customer Reviews Page">
+                <style>
+                
+                        form {
+                            width: 300px;
+                            margin: 0 auto;
+                        }
+                
+                        label {
+                            display: block;
+                            margin-bottom: 5px;
+                        }
+                        body {
+                                background-color: rgb(227, 155, 216);
+                                color : rgb(148, 3, 126);
+                        }
+                        #reviewBox {
+                                max-width: 600px;
+                                margin: 0 auto;
+                                padding: 20px;
+                        }
+                        .review {
+                                background-color: #f5f5f5;
+                                padding: 10px;
+                                border: 1px solid #ddd;
+                                border-radius: 10px;
+                        }
+                        #reviewBox.reviewGrid {
+                                display: grid;
+                                grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+                                gap: 20px;
+                        }
+                </style>   
+        </head>
+        <body>
+                <header style = "background-attachment: fixed">
+                        <nav>
+                                <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>
+                                <li><a href="review.html">Customer Reviews</a></li>
+                                <li><a href="history.html">History of Pink</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="trending.html">Trending</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                
+                                </ul>
+                        </nav>
+                </header>
+
+                <main>
+                        <h1>Customer Reviews</h1>
+                        <h3>Discover What Our Customers Are Saying!</h3>
+                        <div id="reviewBox" class="reviewGrid"></div>
+                       <script>
+                        $(document).ready(function() {
+                                const reviews = [
+                                        {
+                                                name: "Jenny, 21",
+                                                content: "I recently purchased the pink fanny pack from this website, and I couldn't be happier! It's the perfect size for carrying essentials at a festival",
+                                        },
+                                        {
+                                                name: "Sarah, 32",
+                                                content: "I needed a small, pink water bottle for my daily workouts, and this one is just what I was looking for.",
+                                        },
+                                        {
+                                                name: "Emma, 17",
+                                                content: "This cropped pink tank top is the cutest addition to my wardrobe. The small bow detail adds a touch of charm, and the fit is perfect.",
+                                        },
+                                        {
+                                                name: "James, 28",
+                                                content: "These high-top pink sneakers are not only stylish but also comfortable. The white rubber soles provide great support, and the pink color adds a pop of fun to any outfit.",
+                                        },
+                                        {
+                                                name: "Jennifer, 36",
+                                                content: "These pink crew socks with avocado halves are adorable. They're not only cute but also comfortable to wear.",
+                                        },
+                                        {
+                                                name: "Holly, 40",
+                                                content: "The hot pink phone case with a built-in wallet is both functional and stylish. It fits my phone perfectly, and the wallet is convenient for carrying cards and cash.",
+                                        },
+                                        {
+                                                name: "Alex, 34",
+                                                content: "I can't get enough of these pink hair scrunchies! The pack of three comes in different shades of pink, which gives me options to match any outfit.",
+                                        },
+                                        {
+                                                name: "Mary, 25",
+                                                content: "I recently purchased the thin, pink belt covered in sparkling rhinestones, and it has quickly become my go-to accessory for special occasions.",
+                                        },
+                        ];
+                        const reviewsList = $("#reviewBox");
+
+                        function displayReviews() {
+                                reviews.forEach((review, index) => {
+                                        const reviewLi = $("<div>").addClass("review");
+                                        reviewLi.append($("<h3>").text(review.name));
+                                        reviewLi.append($("<p>").text(review.content));
+
+                                        reviewLi.hide().appendTo(reviewsList).fadeIn(1500);
+                                });
+                        }
+
+                        displayReviews();
+                        });
+                       </script>
+                       
+                </main>
+                <footer>
+                        Think Pink. Live Bright.
+                </footer>
+                
+        </body>
+</html>
