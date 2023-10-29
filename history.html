@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+
+  <style>
+	  
+	  body {
+            background-color: pink;
+        }
+	  
+	  .grid-container {
+		  display: grid;
+		  grid-template-columns: repeat(3, 1fr);
+		  padding: 150px;
+	  }
+	  
+	  .item {
+		  position: relative;
+	  }
+	  
+	  .image {
+		  display: block;
+		  width: 100%;
+		  height: auto;
+	  }
+	  
+	  .overlay {
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  height: 100%;
+		  width: 100%;
+		  opacity: 0;
+		  transition: .5s ease;
+		  background-color: lightpink;
+	  }
+	  
+	  .item:hover .overlay {
+		  opacity: 1;
+	  }
+	  
+	  .text {
+		  color: white;
+		  font-size: 12px;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+	  }
+	  
+	  
+  </style>
+</head>
+
+<body>
+	 <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="catalog.html">Shop Now</a></li>
+                <li><a href="history.html">History of Pink</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+	
+	<h1>History of Pink</h1>
+	
+	<div class="grid-container">
+		<div class="item">
+			<div class="container">
+				<img src="hisofpink.jpeg" alt="Image 1" class="image">
+				<div class="overlay">
+					<div class="text">
+						<strong>Ancient Pink: The Pink Dress Era</strong>
+						<p>
+							In the annals of history, pink made its early mark in the fashion world. A glimpse into the past reveals an old pink dress, a relic of times when the color was derived from natural sources. Madder roots and cochineal insects provided the hues, setting the stage for pink's subtle entrance into the wardrobe of antiquity.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="container">
+				<img src="hisofpink11.jpeg" alt="Image 2" class="image">
+				<div class="overlay">
+					<div class="text">
+						<strong>Pink in Art: The Palette of Expression</strong>
+						<p>
+							Artists through the ages have wielded the power of pink to convey emotion and symbolism. From delicate blushes in Renaissance masterpieces to bold strokes in modern art, pink emerged as a canvas for expression. The spectrum of pink shades became a means to communicate everything from innocence to passion, adding layers of meaning to the world of art.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="container">
+				<img src="hisofpink3.jpeg" alt="Image 3" class="image">
+				<div class="overlay">
+					<div class="text">
+						<strong>The Feminine Charm: Pink in Women's Advertising</strong>
+						<p>
+							Enter the realm of advertising, where pink became synonymous with femininity. A vintage advertisement featuring a woman adorned in pink captures an era when marketers strategically used the color to appeal to female consumers. Pink became a symbol of grace and allure, forging a connection between the color and the essence of womanhood.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="container">
+				<img src="hisofpink4.jpeg" alt="Image 4" class="image">
+				<div class="overlay">
+					<div class="text">
+						<strong>Barbie: Pink as a Lifestyle</strong>
+						<p>
+							The iconic Barbie doll epitomizes the association of pink with modern femininity. With her pink-themed wardrobe and accessories, Barbie became a cultural phenomenon, shaping perceptions of beauty and fashion. The doll's world mirrored society's evolving views on gender and style, with pink at the forefront of this revolution.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="container">
+				<img src="hisofpink15.jpeg" alt="Image 5" class="image">
+				<div class="overlay">
+					<div class="text">
+						<strong>Breaking Stereotypes: Men in Pink Suits</strong>
+						<p>
+							Pink wasn't confined to a single gender. The evolution of fashion saw men confidently donning pink suits, challenging traditional norms. A snapshot of men embracing this color reflects societal shifts, breaking down stereotypes and embracing the versatility of pink in men's fashion.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="container">
+				<img src="hisofpink14.jpeg" alt="Image 6" class="image">
+				<div class="overlay">
+					<div class="text">
+						<strong>Together in Pink: Couple Dynamics</strong>
+						<p>
+							The final frame captures a couple harmoniously clad in shades of pink. This image represents the contemporary acceptance of pink as a shared color in relationships. No longer confined to gender norms, pink has become a symbol of unity and shared aesthetics, weaving its way into the fabric of modern love and partnership.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="logo">
+		<a href="home.html" id="logo">
+			<img src="logoandwords.png">
+		</a>
+	</div>
+
+        <footer>
+                Think Pink. Live Bright.
+        </footer>
+	
+</body>
+
+</html>
