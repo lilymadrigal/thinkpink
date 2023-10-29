@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href = "products.css" ?>
+<catalog>
+        <product>
+                <productname> Willie Sweater </productname>
+                <productdescription> Crewneck Cableknit Wool Sweater </productdescription>
+                <productsize> M </productsize>
+                <productprice> $50.00 </productprice>
+                <productcategory> Sweaters, Fall, Pink </productcategory>
+        </product>
+        <product>
+                <productname> Milly Sweater </productname>
+                <productdescription> V-Neck Cableknit Wool Sweater </productdescription>
+                <productsize> M </productsize>
+                <productprice> $45.00 </productprice>
+                <productcategory> Sweaters, Fall, Pink </productcategory>
+        </product>
+        <product>
+                <productname> Fanny Pack </productname>
+                <productdescription> Pink over-the-shoulder fanny pack </productdescription>
+                <productsize> S </productsize>
+                <productprice> $20.00 </productprice>
+                <productcategory> Accessories, Festival, Pink </productcategory>
+        </product>
+        <product>
+                <productname> Water Bottle </productname>
+                <productdescription> Small, short, metal, pink water bottle</productdescription>
+                <productsize> S </productsize>
+                <productprice> $30.00 </productprice>
+                <productcategory> Accessories, Pink </productcategory>
+        </product>
+        <product>
+                <productname> Tank Top </productname>
+                <productdescription> Cropped, pink, tank top with a small bow</productdescription>
+                <productsize> XS </productsize>
+                <productprice> $15.00 </productprice>
+                <productcategory> Clothing, Pink </productcategory>
+        </product>
+        <product>
+                <productname> High-Top Sneakers </productname>
+                <productdescription> High-top pink, laced, sneakers with white rubber soles.</productdescription>
+                <productsize> US 8 </productsize>
+                <productprice> $50.00 </productprice>
+                <productcategory> Shoes, Pink </productcategory>
+        </product>
+        <product>
+                <productname> Hoop Earrings </productname>
+                <productdescription> Small, hot pink, hooped earrings.</productdescription>
+                <productsize> S </productsize>
+                <productprice> $20.00 </productprice>
+                <productcategory> Accessories, Party, Pink </productcategory>
+        </product>
+        <product>
+                <productname> Festival Bucket Hat </productname>
+                <productdescription> "Pink, flamingo bucket hat; perfect for the beach or a music festival!</productdescription>
+                <productsize> S </productsize>
+                <productprice> $18.00 </productprice>
+                <productcategory> Accessories, Festival, Pink </productcategory>
+        </product>
+        <product>
+                <productname> Rhinestone Belt </productname>
+                <productdescription> Thin, pink belt, covered in sparkling rhinestones</productdescription>
+                <productsize> M </productsize>
+                <productprice> $15.00 </productprice>
+                <productcategory> Accessories, Party, Pink </productcategory>
+        </product>
+        <product>
+                <productname> Avocado Socks </productname>
+                <productdescription> Pink crew socks, covered with avocado halves; comes in a pair.</productdescription>
+                <productsize> S </productsize>
+                <productprice> $7.00 </productprice>
+                <productcategory> Accessories, Pink </productcategory>
+        </product>
+        <product>
+                <productname> Purse </productname>
+                <productdescription> Cross-body, pink purse.</productdescription>
+                <productsize> ONE SIZE </productsize>
+                <productprice> $45.00 </productprice>
+                <productcategory> Accessories, Pink </productcategory>
+        </product>
+        <product>
+                <productname> Toiletries Pouch </productname>
+                <productdescription> Small pouch, perfect for holding everything you need for a weekend away!</productdescription>
+                <productsize> S </productsize>
+                <productprice> $20.00 </productprice>
+                <productcategory> Accessories, Pink </productcategory>
+        </product>
+        <product>
+                <productname> Phone Case </productname>
+                <productdescription> Hot pink plastic phone case with build in phone wallet.</productdescription>
+                <productsize> ONE SIZE </productsize>
+                <productprice> $25.00 </productprice>
+                <productcategory> Accessories, Festival, Pink </productcategory>
+        </product>
+        <product>
+                <productname> Hair Scrunchies </productname>
+                <productdescription> Pack of 3 scrunchies, all different shades of pink.</productdescription>
+                <productsize> XS </productsize>
+                <productprice> $10.00 </productprice>
+                <productcategory> Accessories, Party, Pink </productcategory>
+        </product>
+        
+</catalog>
