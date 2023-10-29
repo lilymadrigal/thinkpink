@@ -2,6 +2,10 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <meta name="description" content="index">
+        <meta name="author" content="Maya Snyder">
+        <meta name="keywords" content="Home Page">
 	<title>Think Pink</title>
         <link rel="stylesheet" href="styles.css">
         <style type="text/css">
@@ -14,11 +18,11 @@
         }
 
         #shipping {
-                position: absolute;
-                bottom: -40%;
-                left: 0;
+                position: relative;
+                bottom: 15%;
+                left: -5;
                 width: 100%;
-                padding: 20px;
+                padding: 20px 0 20px 10px; 
                 background-color: #ff369b;
                 color: white;
                 font-family: 'Geneva';
@@ -39,6 +43,7 @@
         }
 
         .text-container {
+                text-align:center;
                 color: white;
                 font-family: 'Geneva';
                 font-weight: bold;
@@ -46,18 +51,19 @@
                 text-align: left;
         }
         #button {
-            padding: 20px;
-            width: 50%;
-            max-width: 300px;
-            height: 50px;
-            box-sizing: border-box;
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            font-family: 'Geneva';
-            font-weight: bold;
-            font-size: 18px;
+                text-align:center;
+                padding: 20px;
+                width: 50%;
+                max-width: 300px;
+                height: 50px;
+                box-sizing: border-box;
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-family: 'Geneva';
+                font-weight: bold;
+                font-size: 18px;
         }
 
         #button a {
@@ -71,9 +77,9 @@
             border-radius: 5px;
         }
         .breast_cancer img {
-            width: 100%; /* Make sure the image fills the entire div */
-            height: 50%; /* Make sure the image fills the entire div */
-            object-fit: cover; /* Scale the image while maintaining its aspect ratio */
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -81,17 +87,17 @@
 <body style='background-color: rgb(227, 155, 216)'>
 
         <header style="background-attachment: fixed">
-        <nav>
-                <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="catalog.html">Shop Now</a></li>
-                <li><a href="history.html">History of Pink</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="trending.html">Trending</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                </ul>
-        </nav>
+                <nav>
+                        <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>
+                                <li><a href="catalog.html">Shop Now</a></li>
+                                <li><a href="history.html">History of Pink</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="giveback.html">Give Back</a></li>
+                                <li><a href="order.html">Cart</a></li>
+                        </ul>
+                </nav>
         </header>
 
         <h1 style='color: rgb(148, 3, 126)'> Think Pink </h1>
@@ -100,7 +106,7 @@
         <div class="content">
                 <div class="home_images">
                 <div class="home_image_left">
-                        <img src='pink2_resized.jpg' />
+                        <img src='pink_resized 3.jpg' />
                         <div class="text-container">
                                 <h4>Warmer and cozier. Chunky Knit Sweaters: 
                                 the Willie Sweater, Crewneck Cableknit Wool Sweater</h4>
@@ -143,7 +149,7 @@
         <!-- add the logo in the styling -->
         <div id="logo"> </div>
 
-        <a href="home.html" id="logo"> </a>
+        <a href="index.html" id="logo"> </a>
 
         <footer>
                 Think Pink. Live Bright.
