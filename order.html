@@ -3,14 +3,58 @@
         <head>
                 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
                 <title> Order Form </title>
+                <link rel="stylesheet" href="styles.css" >
                 <style>
-                        .info {
+                        tr {
+                                font-family: 'Geneva';
+                                color: rgb(92, 1, 79);  
+                        }
+
+                        .button {
+                                font-family: 'Geneva';
+                                color: rgb(92, 1, 79); 
+                                background-color: white;
+                                padding: 10px;
+                                font-size: 20px;    
+                        }
+
+                        .button:hover {
+                                background-color: pink;
+                        }
+
+                        td {
+                                text-align: center;
+                        }
+
+                        form {
                                 display: block;
-                                margin-bottom: 10px;
+                        }
+
+                        .information label {
+                                text-align: right;
+                                display: inline-block;
+                                padding-right: 5px;
+                                width: 100px;
                         }
                 </style>
         </head>
         <body>
+                <header style = "background-attachment: fixed">
+                        <nav>
+                                <ul>
+                                    <li>
+                                        <a href="index.html" id="logo">
+                                        <img src="logowhite.png" width= 200px>
+                                        </a></li>
+                                    <li><a href="aboutus.html">About Us</a></li>
+                                    <li><a href="catalog.html">Shop Now</a></li>
+                                    <li><a href="history.html">History of Pink</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="giveback.html">Give Back</a></li>
+                                    <li><a href="order.html">Cart</a></li>
+                                </ul>
+                            </nav>
+                </header>
                 <script language="javascript">
                         $(document).ready (function() {
                                 $(".selectQuantity select").change(function(){
@@ -19,8 +63,15 @@
                                         quan = this.selectedIndex;
                                         totalCost = price * quan;
                                         document.forms[0].cost[index].value = totalCost.toFixed(2);
-                                        document.forms[0].subtotal.value += totalCost.toFixed(2);
-                                        //parseInt(document.forms[0].subtotal.value);
+                                        subtotalValue = document.forms[0].subtotal.value; 
+                                        subtotalValue = parseFloat(subtotalValue.toFixed(2));
+                                        TotalCostParse = parseFloat(totalCost.toFixed(2));
+                                        subtotalValue = subtotalValue + TotalCostParse;
+                                        // subtotalInput = subtotalValue + TotalCostParse;
+                                        // subtotalValue = subtotalInput;
+
+                                        //+= totalCost.toFixed(2);
+                                        //parseInt(document.forms[0].subtotal.value) += totalCost.toFixed(2);
                                         // number = $("#subtotal").value;
                                         // $("#subtotal").value = number + totalCost; 
                                 })
@@ -66,12 +117,13 @@
                 </script>
                 <h1 id="orderForm"> Order Form </h1>
                 <form>
-                        <p class="info"><label>First Name:</label> <input type="text"  name='fname' /></p>
-                        <p class="info"><label>Last Name*:</label>  <input type="text"  name='lname' /></p>
-                        <p class="info address"><label>Street*:</label> <input type="text" name='street' /></p> <!-- has extra class that would make it easier to hide/modify-->
-                        <p class="info address"><label>City*:</label> <input type="text" name='city' /></p>	    <!-- has extra class that would make it easier to hide/modify-->
-                        <p class="info"><label>Phone*:</label> <input type="text"  name='phone' /></p>
-
+                        <div class="information">
+                                <p class="info"><label>First Name:</label> <input type="text"  name='fname' /></p>
+                                <p class="info"><label>Last Name*:</label>  <input type="text"  name='lname' /></p>
+                                <p class="info address"><label>Street*:</label> <input type="text" name='street' /></p> <!-- has extra class that would make it easier to hide/modify-->
+                                <p class="info address"><label>City*:</label> <input type="text" name='city' /></p>	    <!-- has extra class that would make it easier to hide/modify-->
+                                <p class="info"><label>Phone*:</label> <input type="text"  name='phone' /></p>
+                        </div>
                         <table border="0" cellpadding="3">
                                 <tr>
                                   <th> Select Quantity </th>
@@ -94,16 +146,18 @@
                                 document.writeln(s);
                         </script>
                         </table>
-                        <p class="subtotal totalSection"><label>Subtotal</label>: 
-                                $ <input type="text"  name='subtotal' id="subtotal" />
-                        </p>
-                        <p class="tax totalSection"><label>Mass tax 6.25%:</label>
-                                $ <input type="text"  name='tax' id="tax" />
-                        </p>
-                        <p class="total totalSection"><label>Total:</label> $ <input type="text"  name='total' id="total" />
-                        </p>
+                        <div class="information"> 
+                                <p class="subtotal totalSection"><label>Subtotal: $</label> 
+                                        <input type="text"  name='subtotal' id="subtotal" />
+                                </p>
+                                <p class="tax totalSection"><label>Mass tax 6.25%: $</label>
+                                        <input type="text"  name='tax' id="tax" />
+                                </p>
+                                <p class="total totalSection"><label>Total: $</label> <input type="text"  name='total' id="total" />
+                                </p>
+                        </div>
                         
-                        <input type = "button" value = "Submit Order" />
+                        <input type = "button" value = "Submit Order" class="button"/>
                              
                 </form>
                 
