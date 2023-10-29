@@ -3,106 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content=“width=device-width, initial-scale=1”> 
-<meta name="description" content="contact"> 
-<meta name="author" content="Lily Madrigal"> 
-<meta name="keywords" content="Contact Us Page"> 
-<link rel="stylesheet" href="styles.css">
+<meta name="description" content="giveback"> 
+<meta name="author" content="Lizzie Pimentel"> 
+<meta name="keywords" content="Give Back Page"> 
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+            margin: 0;
+            background-color: rgb(227, 155, 216);
+			text-align: center;
+			color: rgb(148, 3, 126);
+        	font-family: 'Geneva';
+		}
+		section {
+			padding: 50px;
+		}
 
-  <style>
-	  
-	  body {
-		  background-color: rgb(227, 155, 216);
-		  font-family: 'Geneva';
-		  color: rgb(148, 3, 126);
-
-        }
-	  
-	  .grid-container {
-		  display: grid;
-		  grid-template-columns: repeat(3, 1fr);
-		  padding-left: 300px;
-		  padding-right: 300px;
-		  padding-top: 50px;
-	  }
-	  
-	  .item {
-		  position: relative;
-	  }
-	  
-	  .image {
-		  display: block;
-		  width: 100%;
-		  height: auto;
-	  }
-	  
-	  .overlay {
-		  position: absolute;
-		  top: 0;
-		  bottom: 0;
-		  left: 0;
-		  right: 0;
-		  height: 100%;
-		  width: 100%;
-		  opacity: 0;
-		  transition: .5s ease;
-		  background-color: hotpink;
-	  }
-	  
-	  .item:hover .overlay {
-		  opacity: 1;
-	  }
-	  
-	  .text {
-		  color: white;
-		  font-size: 12px;
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  transform: translate(-50%, -50%);
-		  text-align: center;
-		  max-height: 90%;
-	  }
-	  
-	  @media screen and (max-width: 1200px) {
-		  .text {
-                font-size: 9px;
-            }
-        }
-	  
-	  @media screen and (max-width: 1000px) {
-            .grid-container {
-                grid-template-columns: repeat(2, 1fr); /* Change to two columns for medium screens */
-            }
-		  .text {
-                font-size: 10px;
-            }
-        }
-	  
-	  @media screen and (max-width: 800px) {
-            .grid-container {
-                grid-template-columns: repeat(2, 1fr); /* Change to two columns for medium screens */
-            }
-		  .text {
-                font-size: 8px;
-            }
+        button {
+            background-color: palevioletred;
+			border-color: darkred;
+            color: floralwhite;
+            padding: 10px 15px;
+			cursor: pointer;
         }
 
-        @media screen and (max-width: 700px) {
-            .grid-container {
-                grid-template-columns: 1fr; /* Change to one column for smaller screens */
-            }
-
-            .text {
-                font-size: 10px;
+        button:hover {
+            background-color: rgb(148, 3, 126);
+        }
+		
+		@media screen and (max-width: 600px) {
+            section {
+                padding: 25px;
             }
         }
-	  
-	  
-  </style>
-</head>
-
+	</style>
+	
+	
+    <title>Giving Back</title>
+	
+	</head>
 <body>
-	 <nav>
+	
+	<nav>
             <ul>
                 <li>
 					<a href="index.html" id="logo">
@@ -117,97 +59,65 @@
             </ul>
         </nav>
 	
-	<h1>History of Pink</h1>
-	
-	<div class="grid-container">
-		<div class="item">
-			<div class="container">
-				<img src="hisofpink.jpeg" alt="Image 1" class="image">
-				<div class="overlay">
-					<div class="text">
-						<strong>Ancient Pink: The Pink Dress Era</strong>
-						<p>
-							In the annals of history, pink made its early mark in the fashion world. A glimpse into the past reveals an old pink dress, a relic of times when the color was derived from natural sources. Madder roots and cochineal insects provided the hues, setting the stage for pink's subtle entrance into the wardrobe of antiquity.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+	<section>
+		<h1>Inspiration and Giving Back</h1>
+		<p>
+			Our curated collection of pink items represents more than just a color; it's a symbol of hope, strength, and community.
+		</p>
 		
-		<div class="item">
-			<div class="container">
-				<img src="hisofpink11.jpeg" alt="Image 2" class="image">
-				<div class="overlay">
-					<div class="text">
-						<strong>Pink in Art: The Palette of Expression</strong>
-						<p>
-							Artists through the ages have wielded the power of pink to convey emotion and symbolism. From delicate blushes in Renaissance masterpieces to bold strokes in modern art, pink emerged as a canvas for expression. The spectrum of pink shades became a means to communicate everything from innocence to passion, adding layers of meaning to the world of art.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+		<h3>The Power of Pink</h3>
+		<p>
+			In every shade of pink lies a powerful force—strength, resilience, and the unwavering spirit of those facing breast cancer. The Power of Pink is a celebration of courage, a tribute to the fighters, survivors, and those we've lost. Join us in recognizing the indomitable power that this color carries and wear it proudly as a symbol of support and solidarity.
+		</p>
 		
-		<div class="item">
-			<div class="container">
-				<img src="hisofpink3.jpeg" alt="Image 3" class="image">
-				<div class="overlay">
-					<div class="text">
-						<strong>The Feminine Charm: Pink in Women's Advertising</strong>
-						<p>
-							Enter the realm of advertising, where pink became synonymous with femininity. A vintage advertisement featuring a woman adorned in pink captures an era when marketers strategically used the color to appeal to female consumers. Pink became a symbol of grace and allure, forging a connection between the color and the essence of womanhood.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+		<h3>Breast Cancer Awareness</h3>
+		<p>
+			At ThinkPink, we believe in the power of giving back. A portion of our proceeds goes towards supporting breast cancer awareness initiatives. We are proud to contribute to the fight against breast cancer, a cause close to our hearts. Together, we can make a difference.
+		</p>
 		
-		<div class="item">
-			<div class="container">
-				<img src="hisofpink4.jpeg" alt="Image 4" class="image">
-				<div class="overlay">
-					<div class="text">
-						<strong>Barbie: Pink as a Lifestyle</strong>
-						<p>
-							The iconic Barbie doll epitomizes the association of pink with modern femininity. With her pink-themed wardrobe and accessories, Barbie became a cultural phenomenon, shaping perceptions of beauty and fashion. The doll's world mirrored society's evolving views on gender and style, with pink at the forefront of this revolution.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+		<h3>Join the Pink Movement</h3>
+		<p>
+			By joining the Pink Movement, you're contributing to a community dedicated to raising awareness, supporting research, and standing with those affected by breast cancer. Your voice matters, and together, we can create lasting change. We invite you to join us in supporting the American Cancer Society's breast cancer donation campaign.
+		</p>
 		
-		<div class="item">
-			<div class="container">
-				<img src="hisofpink15.jpeg" alt="Image 5" class="image">
-				<div class="overlay">
-					<div class="text">
-						<strong>Breaking Stereotypes: Men in Pink Suits</strong>
-						<p>
-							Pink wasn't confined to a single gender. The evolution of fashion saw men confidently donning pink suits, challenging traditional norms. A snapshot of men embracing this color reflects societal shifts, breaking down stereotypes and embracing the versatility of pink in men's fashion.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+		<a href="https://donate.cancer.org/?campaign=breastcancerdonation&utm_source=google&utm_medium=cpc&utm_campaign=%5BB%5D+American+Cancer+Society+-+BMM&utm_term=breast%20cancer%20donation&gad_source=1" target="_blank">
+			<button>Donate to Breast Cancer Awareness</button>
+		</a>
 		
-		<div class="item">
-			<div class="container">
-				<img src="hisofpink14.jpeg" alt="Image 6" class="image">
-				<div class="overlay">
-					<div class="text">
-						<strong>Together in Pink: Couple Dynamics</strong>
-						<p>
-							The final frame captures a couple harmoniously clad in shades of pink. This image represents the contemporary acceptance of pink as a shared color in relationships. No longer confined to gender norms, pink has become a symbol of unity and shared aesthetics, weaving its way into the fabric of modern love and partnership.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+		<ul>
+			<li>
+				<strong>Make a Donation:</strong> 
+				Support organizations working towards breast cancer research and awareness through monetary contributions.
+			</li>
+			<li>
+				<strong>Participate in Fundraising Events:</strong>
+				Join or organize events such as charity walks, runs, or fundraisers to raise awareness and funds for breast cancer initiatives.
+			</li>
+			<li>
+				<strong>Spread Awareness on Social Media:</strong>
+				Share informative posts, articles, and resources about breast cancer on your social media platforms to educate and raise awareness.
+			</li>
+		</ul>
+		
+		<h3>Impactful Choices</h3>
+		<p>
+			Your purchase at ThinkPink is more than a transaction; it's a statement of solidarity. Together, we can make a positive impact—one pink item at a time. Thank you for being a part of the ThinkPink community and for supporting the fight against breast cancer.
+		</p>
+		
+		<p>Let's think pink, spread love, and make a difference.</p>
+		
+		<p>
+			<i>With love, The ThinkPink Team</i>
+		</p>
+	</section>
 
         <footer>
                 Think Pink. Live Bright.
         </footer>
+
+
+</body>
+</html>
 	
 </body>
 
