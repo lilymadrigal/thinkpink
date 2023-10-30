@@ -2,12 +2,33 @@
 <html>
         <head>
                 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+                
                 <title> Order Form </title>
+
                 <link rel="stylesheet" href="styles.css" >
+
+                <meta name="viewport" content=“width=device-width, initial-scale=1”> 
+
+                <meta name="description" content="cart"> 
+
+                <meta name="author" content="Juliana Rosen"> 
+
+                <meta name="keywords" content="Cart Page"> 
+
                 <style>
+                        body {
+                                background-color: rgb(227, 155, 216);
+
+                        }
                         tr {
                                 font-family: 'Geneva';
                                 color: rgb(92, 1, 79);  
+                        }
+
+                        #button {
+                                display: grid;
+                                place-items: center;
+                                padding-bottom: 20px;
                         }
 
                         .button {
@@ -15,11 +36,12 @@
                                 color: rgb(92, 1, 79); 
                                 background-color: white;
                                 padding: 10px;
-                                font-size: 20px;    
+                                font-size: 20px;   
                         }
 
                         .button:hover {
-                                background-color: pink;
+                                background-color: rgb(227, 155, 216);
+
                         }
 
                         td {
@@ -35,6 +57,45 @@
                                 display: inline-block;
                                 padding-right: 5px;
                                 width: 100px;
+                        }
+
+                        @media screen and (max-width: 900px) {
+
+                                #button {
+                                        display: grid;
+                                        place-items: center;
+                                        padding-bottom: 20px;
+                                }
+
+                                .button {
+                                        font-family: 'Geneva';
+                                        color: rgb(92, 1, 79); 
+                                        background-color: white;
+                                        padding: 5px;
+                                        font-size: 10px;   
+                                }
+
+                                .button:hover {
+                                        background-color: rgb(227, 155, 216);
+
+                                }
+
+                                td {
+                                        text-align: center;
+                                }
+
+                                form {
+                                        display: block;
+                                }
+
+                                .information label {
+                                        text-align: right;
+                                        display: inline-block;
+                                        padding-right: 3px;
+                                        width: 100px;
+                                }
+
+                                
                         }
                 </style>
         </head>
@@ -58,29 +119,31 @@
                 <script language="javascript">
                         $(document).ready (function() {
                                 $(".selectQuantity select").change(function(){
+                                        // setting total cost per item
                                         index = parseInt(this.name.substr(4));
                                         price = (pinkItems[index].cost);
                                         quan = this.selectedIndex;
                                         totalCost = price * quan;
                                         document.forms[0].cost[index].value = totalCost.toFixed(2);
-                                        subtotalValue = document.forms[0].subtotal.value; 
-                                        subtotalValue = parseFloat(subtotalValue.toFixed(2));
-                                        TotalCostParse = parseFloat(totalCost.toFixed(2));
-                                        subtotalValue = subtotalValue + TotalCostParse;
-                                        // subtotalInput = subtotalValue + TotalCostParse;
-                                        // subtotalValue = subtotalInput;
 
-                                        //+= totalCost.toFixed(2);
-                                        //parseInt(document.forms[0].subtotal.value) += totalCost.toFixed(2);
-                                        // number = $("#subtotal").value;
-                                        // $("#subtotal").value = number + totalCost; 
-                                })
-                                
-                                $(".totalCost ").change(function() {
-                                        // subtotal = document.getElementById("subtotal").innerHTML; //+= this.value;
-                                        // alert(subtotal);
-                                        document.forms[0].subtotal.value += totalCost.toFixed(2);
-                                        //alert(this.input.value);
+                                        // setting subtotal value
+                                        subtotalValue = document.forms[0].subtotal.value;
+                                        subtotalValue = parseFloat(subtotalValue);
+                                        totalCost = parseFloat(totalCost);
+                                        subtotalValue = (subtotalValue + totalCost).toFixed(2);
+                                        document.forms[0].subtotal.value = subtotalValue;
+
+                                        // setting tax value
+                                        taxValue = document.forms[0].tax.value;
+                                        taxValue = parseFloat(taxValue);
+                                        taxValue = parseFloat(subtotalValue *.0625);
+                                        document.forms[0].tax.value = taxValue.toFixed(2);
+
+                                        // setting total value 
+                                        finalCost = document.forms[0].total.value;
+                                        finalCost = parseFloat(taxValue);
+                                        finalCost = parseFloat(taxValue) + parseFloat(subtotalValue);
+                                        document.forms[0].total.value = finalCost.toFixed(2);
                                 })
                         })
 
@@ -91,13 +154,20 @@
                         }
 
                         pinkItems = new Array(
-                                new PinkItem("Thing 1", 5.5),
-                                new PinkItem("Thing 2", 7.25),
-                                new PinkItem("Thing 3", 6.80),
-                                new PinkItem("Thing 4", 9.50),
-                                new PinkItem("Thing 5", 3.25),
-                                new PinkItem("Thing 6", 3.25),
-                                new PinkItem("Thing 7", 3.25)
+                                new PinkItem("Fanny Pack", 20),
+                                new PinkItem("Water Bottle", 30),
+                                new PinkItem("Tank Top", 15),
+                                new PinkItem("High-Top Sneakers", 50),
+                                new PinkItem("Hoop Earrings", 30),
+                                new PinkItem("Festival Bucket Hat", 18),
+                                new PinkItem("Rhinestone Belt", 15),
+                                new PinkItem("Avocado Socks", 10),
+                                new PinkItem("Purse", 45),
+                                new PinkItem("Toiletries Pouch", 20),
+                                new PinkItem("Phone Case", 25),
+                                new PinkItem("Hair Scrunchies", 10),
+                                new PinkItem("Willie Sweater", 50),
+                                new PinkItem("Milly Sweater", 45),
                         );
 
                         function makeSelect(name, minRange, maxRange)
@@ -120,8 +190,8 @@
                         <div class="information">
                                 <p class="info"><label>First Name:</label> <input type="text"  name='fname' /></p>
                                 <p class="info"><label>Last Name*:</label>  <input type="text"  name='lname' /></p>
-                                <p class="info address"><label>Street*:</label> <input type="text" name='street' /></p> <!-- has extra class that would make it easier to hide/modify-->
-                                <p class="info address"><label>City*:</label> <input type="text" name='city' /></p>	    <!-- has extra class that would make it easier to hide/modify-->
+                                <p class="info address"><label>Street*:</label> <input type="text" name='street' /></p> 
+                                <p class="info address"><label>City*:</label> <input type="text" name='city' /></p>	   
                                 <p class="info"><label>Phone*:</label> <input type="text"  name='phone' /></p>
                         </div>
                         <table border="0" cellpadding="3">
@@ -148,18 +218,22 @@
                         </table>
                         <div class="information"> 
                                 <p class="subtotal totalSection"><label>Subtotal: $</label> 
-                                        <input type="text"  name='subtotal' id="subtotal" />
+                                        <input type="text"  name='subtotal' id="subtotal" value="0.00" />
                                 </p>
                                 <p class="tax totalSection"><label>Mass tax 6.25%: $</label>
-                                        <input type="text"  name='tax' id="tax" />
+                                        <input type="text"  name='tax' id="tax" value="0.00"/>
                                 </p>
-                                <p class="total totalSection"><label>Total: $</label> <input type="text"  name='total' id="total" />
+                                <p class="total totalSection"><label>Total: $</label> 
+                                        <input type="text"  name='total' id="total" value="0.00"/>
                                 </p>
                         </div>
                         
-                        <input type = "button" value = "Submit Order" class="button"/>
-                             
+                        <div id="button">
+                                <input type = "submit" value = "Submit Order" class="button"/>
+                        </div>
                 </form>
-                
+                <footer>
+                        Think Pink. Live Bright.
+                </footer>
         </body>
 </html>
