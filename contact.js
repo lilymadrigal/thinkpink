@@ -33,11 +33,11 @@ function check_Input(name, email, number, message) {
         } 
         if(!email) {
                 invalidInput++;
-                alert("Please enter your phone number.")
+                alert("Please enter your email address.")
         } 
         if(!number) {
                 invalidInput++;
-                alert("Please enter your email address.")
+                alert("Please enter your phone number.")
         } 
         if(!message) {
                 invalidInput++;
