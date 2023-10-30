@@ -1,0 +1,40 @@
+/* CSS Document */
+
+product {
+	display: block;
+	margin-bottom: 20px;
+	border: 2px solid #FD65B1;
+	padding: 10px;
+	background-color: lavenderblush;
+}
+
+productname {
+	display: flex;
+	font-weight: bold;
+}
+
+
+productdescription {
+	display: flex;
+	color: darkred;
+}
+
+productsize {
+	display: flex;
+	color: orangered;
+}
+
+productprice {
+	display: flex;
+	color: orangered;
+}
+
+
+category {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: italic;
+	color: steelblue;
+	margin: 0 5px;
+}
