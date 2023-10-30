@@ -30,7 +30,7 @@ productprice {
 }
 
 
-category {
+productcategory {
 	display: flex;
 	justify-content: center;
 	align-items: center;
