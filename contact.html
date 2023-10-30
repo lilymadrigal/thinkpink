@@ -22,6 +22,25 @@
                                 background-color: rgb(227, 155, 216);
                                 color : rgb(148, 3, 126);
                         }
+
+                        #button {
+                                display: grid;
+                                place-items: center;
+                                padding-bottom: 20px;
+                        }
+
+                        .button {
+                                font-family: 'Geneva';
+                                color: rgb(92, 1, 79); 
+                                background-color: white;
+                                padding: 10px;
+                                font-size: 20px;   
+                        }
+
+                        .button:hover {
+                                background-color: rgb(227, 155, 216);
+
+                        }
                 </style>   
         </head>
         <body>
@@ -67,8 +86,9 @@
                                 <label for="message">Type Message Here:</label>
                                 <textarea id="message" name="message" rows="4" cols="50"></textarea>
                 
-                                
-                                <input type="submit" value="Submit">
+                                <div class="button>
+                                        <input type="submit" value="Submit" id="button">
+                                </div>
                         </form>
                         <div id="formSubmit" style="font-family: 'Geneva';
                         text-align: center;"></div>
