@@ -107,12 +107,11 @@
                                         <a href="index.html" id="logo">
                                         <img src="logowhite.png" width= 200px>
                                         </a></li>
-                                    <li><a href="aboutus.html">About Us</a></li>
-                                    <li><a href="catalog.html">Shop Now</a></li>
-                                    <li><a href="history.html">History of Pink</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="giveback.html">Give Back</a></li>
-                                    <li><a href="order.html">Cart</a></li>
+                                        <li><a href="catalog.html">Shop Now</a></li>
+                                        <li><a href="history.html">History of Pink</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="giveback.html">Give Back</a></li>
+                                        <li><a href="order.html">Cart</a></li>
                                 </ul>
                             </nav>
                 </header>
@@ -145,6 +144,54 @@
                                         finalCost = parseFloat(taxValue) + parseFloat(subtotalValue);
                                         document.forms[0].total.value = finalCost.toFixed(2);
                                 })
+
+                                let name, email, street, city;
+
+                                $("#lname").change(function () {
+                                        name = this.value;
+                                });
+
+                                $("#email").change(function () {
+                                        email = this.value;
+                                });
+
+                                $("#street").change(function () {
+                                        street = this.value;
+                                });
+                        
+                                $("#city").change(function () {
+                                        city = this.value;
+                                });
+                        
+                                $("form").submit(function (event) {
+                                        event.preventDefault(); 
+                        
+                                        check_Input(name, email, street, city);
+                                });
+
+                                function check_Input(name, email, street, city) {
+                                        let invalidInput = 0;
+
+                                        if(!name) {
+                                                invalidInput++;
+                                                alert("Please enter your last name.")
+                                        } 
+                                        if(!email) {
+                                                invalidInput++;
+                                                alert("Please enter your email address.")
+                                        } 
+                                        if(!street) {
+                                                invalidInput++;
+                                                alert("Please enter a street.")
+                                        } 
+                                        if(!city) {
+                                                invalidInput++;
+                                                alert("Please enter a city.")
+                                        }
+                                        if(invalidInput === 0) {
+                                                $('#formSubmit').html('<p>Form Received! You Will Hear From Us Shortly.</p>');
+                                        }
+                                }
                         })
 
                         function PinkItem(name, cost)
@@ -188,11 +235,11 @@
                 <h1 id="orderForm"> Order Form </h1>
                 <form>
                         <div class="information">
-                                <p class="info"><label>First Name:</label> <input type="text"  name='fname' /></p>
-                                <p class="info"><label>Last Name*:</label>  <input type="text"  name='lname' /></p>
-                                <p class="info address"><label>Street*:</label> <input type="text" name='street' /></p> 
-                                <p class="info address"><label>City*:</label> <input type="text" name='city' /></p>	   
-                                <p class="info"><label>Phone*:</label> <input type="text"  name='phone' /></p>
+                                <p class="info"><label>First Name:</label> <input type="text"  id='fname' /></p>
+                                <p class="info"><label>Last Name*:</label>  <input type="text"  id='lname' /></p>
+                                <p class="info address"><label>Street*:</label> <input type="text" id='street' /></p> 
+                                <p class="info address"><label>City*:</label> <input type="text" id='city' /></p>	   
+                                <p class="info"><label>Email*:</label> <input type="text"  id='email' /></p>
                         </div>
                         <table border="0" cellpadding="3">
                                 <tr>
